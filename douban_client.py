@@ -121,5 +121,5 @@ def _get_ck(content):
 
 if __name__ == '__main__':
     c = DoubanClient()
-    c.login('1281920478@qq.com', 'zaq1111111111')
-    c.edit_signature('178175165', 'test8')
+    c.login('youremail', 'yourpassword')
+    c.edit_signature('username_id', 'signature')
