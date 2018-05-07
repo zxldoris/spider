@@ -110,11 +110,7 @@ if __name__ == '__main__':
     print(len(titles))
 
     for i in range(len(titles)):
-        with open('tangshi.txt','a+') as f:
+        with open('tangshi.txt', 'a+') as f:
             f.write('#%d downloading poem form: %s\n' % (i, titles[i]['url']))
             download_poem(titles[i])
             f.write('标题: %(title)s\t作者：%(writer)s\n%(content)s' % (titles[i]))
-    # for i in range(len(titles)):
-    #     print('#%d downloading poem form: %s' % (i, titles[i]['url']))
-    #     download_poem(titles[i])
-    #     print('标题: %(title)s\t作者：%(writer)s\n%(content)s' % (titles[i]))
